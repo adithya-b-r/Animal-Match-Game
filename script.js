@@ -92,6 +92,12 @@ function check(card) {
 
 function restartInitialisation() {
   pauseTheGame();
+
+  if (score.textContent == 160) {
+    document.getElementById("gameTitle").innerText = "You Win";
+    document.getElementById("gameTitle").style.color = "green";
+  }
+
   document.getElementById("gameOver").style.display = "flex";
   document.getElementById("fscore").textContent = score.textContent;
   document.getElementById("ftries").textContent = tries.textContent;
@@ -125,7 +131,6 @@ function timeCounter() {
     time.textContent = timer;
   }
 }
-
 
 function pauseTheGame() {
   pauseGame = !pauseGame;
