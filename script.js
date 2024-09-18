@@ -86,7 +86,7 @@ function check(card) {
   tries.textContent = counter < 9 ? `0${++counter}` : ++counter;
 
   if (score.textContent == 160) {
-    restartInitialisation()
+    restartInitialisation();
   }
 }
 
@@ -146,3 +146,4 @@ shuffleArr(images);
 insertImages(images);
 
 setInterval(timeCounter, 1000);
+setTimeout(restartInitialisation, 120000);
