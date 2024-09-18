@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Memory Game</title>
 </head>
+
 <body>
   <div class="container">
     <div class="side">
@@ -19,7 +21,7 @@
       </div>
     </div>
     <div class="sec2" id="main">
-        <!-- <div class="flip-card">
+      <!-- <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <img src="imgs/hamster.png">
@@ -30,7 +32,7 @@
           </div>
         </div> -->
 
-       <!-- Cards are dynamically added here  -->
+      <!-- Cards are dynamically added here  -->
 
     </div>
     <div class="side">
@@ -43,7 +45,21 @@
         <p class="box" id="pause"><img src="imgs/pause.png" height="20px" alt=""></p>
       </div>
     </div>
+
+    <div class="gameOver" id="gameOver">
+      <div class="popup">
+        <h3>Game Over</h3>
+        <p>Score: <span id="fscore">00</span></p>
+        <p>Tries: <span id="ftries">00</span></p>
+        <p>Time: <span id="ftime">01:30</span></p>
+        <button id="rst-game">Reset Game</button>
+      </div>
+    </div>
   </div>
+
+
+
   <script src="script.js"></script>
 </body>
+
 </html>
