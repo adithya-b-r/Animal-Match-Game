@@ -33,8 +33,4 @@ Animal Match is an interactive memory game where players flip cards to find matc
 - HTML
 - CSS
 - JavaScript
-<<<<<<< HEAD
 - Audio (for game sounds)
-=======
-- Audio (for game sounds)
->>>>>>> 7341184ead04c1d0d9c858e3c1392552b83cbdff
