@@ -150,5 +150,5 @@ pause.addEventListener("click", pauseTheGame);
 shuffleArr(images);
 insertImages(images);
 
-setInterval(timeCounter, 1000);
-setTimeout(restartInitialisation, 120000);
+setInterval(timeCounter, 1000); //1 sec
+setTimeout(restartInitialisation, 120000);  //End game after 2 mins
