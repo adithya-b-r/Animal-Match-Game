@@ -12,7 +12,7 @@ Animal Match is an interactive memory game where players flip cards to find matc
 
 ## Demo 🌐
 
-Animal MatchUp[Live Preview](https://animalmatchup.netlify.app)
+Animal MatchUp: [Live Preview](https://animalmatchup.netlify.app)
 
 ## Screenshots 📸
 
