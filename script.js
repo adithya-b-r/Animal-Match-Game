@@ -86,12 +86,18 @@ function check(card) {
   tries.textContent = counter < 9 ? `0${++counter}` : ++counter;
 
   if (score.textContent == 160) {
-    restartInitialisation()
+    restartInitialisation();
   }
 }
 
 function restartInitialisation() {
   pauseTheGame();
+
+  if (score.textContent == 160) {
+    document.getElementById("gameTitle").innerText = "You Win";
+    document.getElementById("gameTitle").style.color = "green";
+  }
+
   document.getElementById("gameOver").style.display = "flex";
   document.getElementById("fscore").textContent = score.textContent;
   document.getElementById("ftries").textContent = tries.textContent;
@@ -126,7 +132,6 @@ function timeCounter() {
   }
 }
 
-
 function pauseTheGame() {
   pauseGame = !pauseGame;
 
@@ -145,4 +150,5 @@ pause.addEventListener("click", pauseTheGame);
 shuffleArr(images);
 insertImages(images);
 
-setInterval(timeCounter, 1000);
+setInterval(timeCounter, 1000); //1 sec
+setTimeout(restartInitialisation, 120000);  //End game after 2 mins
